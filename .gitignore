@@ -1,0 +1,6 @@
+.vagrant
+.DS_Store
+./data/openhab/configurations/items/default.items
+./data/openhab/configurations/rules/default.rules
+./data/openhab/configurations/sitemaps/default.sitemap
+
