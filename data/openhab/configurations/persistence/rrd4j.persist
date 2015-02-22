@@ -1,0 +1,14 @@
+// persistence strategies have a name and a definition and are referred to in the "Items" section
+Strategies {
+	// for rrd charts, we need a cron strategy
+	everyMinute : "0 * * * * ?"
+	everyHour 	: "0 0 * * * ?"
+}
+
+Items {
+	// DemoSwitch,NoOfLights,Window_GF_Toilet,XXXHeating* : strategy = everyChange, everyMinute, restoreOnStartup
+	
+	// let's only store temperature values in rrd
+	// Temperature*,Weather_Chart* : strategy = everyMinute, restoreOnStartup
+	SolarStand_Off_in_Chart, SolarTop_Off_in_Chart, Ventilation_in_CoTwo_Chart, Temperature_SolarStand, Temperature_Sauna, Temperature_SolarTop, Temperature_C_Washing_setpoint,Temperature_C_Office_setpoint,Temperature_GF_Bath_setpoint,Temperature_C_Library_setpoint,Temperature_FF_Bed_setpoint,Temperature_FF_Child_setpoint,Temperature_FF_Bath_setpoint,Temperature_GF_Office_setpoint,Temperature_GF_Kitchen_setpoint,Temperature_CoTwo_FF_Child1,Temperature_CoTwo_GF_Kitchen,Temperature*,Weather*,CO*,Humidity*,OutsideTemperature : strategy = everyMinute, restoreOnStartup
+}
