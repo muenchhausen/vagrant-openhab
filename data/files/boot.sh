@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# source: https://github.com/tdeckers/docker-openhab
+
 ####################
 # Configure timezone
 

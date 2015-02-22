@@ -103,6 +103,10 @@ Vagrant.configure(2) do |config|
     # individual configuration
     sudo cp -r /vagrant/data/openhab/configurations /opt/openhab
     sudo ln -s /opt/openhab/addons-avail/org.openhab.binding.knx-1.6.1.jar /opt/openhab/addons/
+    sudo ln -s /opt/openhab/addons-avail/org.openhab.binding.ntp-1.6.1.jar /opt/openhab/addons/
+    sudo ln -s /opt/openhab/addons-avail/org.openhab.persistence.rrd4j-1.6.1.jar /opt/openhab/addons/
+    sudo ln -s /opt/openhab/addons-avail/org.openhab.io.multimedia.tts.freetts-1.6.1.jar /opt/openhab/addons/
+    # sudo ln -s /opt/openhab/addons-avail/org.openhab.binding.http-1.6.1.jar /opt/openhab/addons/
 
     sudo cp /vagrant/data/files/openhab-restart /etc/network/if-up.d/openhab-restart
     sudo chmod +x /etc/network/if-up.d/openhab-restart
